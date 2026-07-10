@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>📚 Attendance Management System</h1>
+        <p>Manage student attendance easily</p>
+    </header>
+
+    <!-- Add Student -->
+
+    <div class="card">
+
+        <h2>Add Student</h2>
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Enter Student Name">
+
+        <input
+            type="text"
+            id="rollNumber"
+            placeholder="Enter Roll Number">
+
+        <button id="addBtn">
+            Add Student
+        </button>
+
+    </div>
+
+    <!-- Search Student -->
+
+    <div class="card">
+
+        <h2>Search Student</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by Name or Roll Number">
+
+    </div>
+
+    <!-- Dashboard -->
+
+    <div class="summary">
+
+        <div class="box">
+            <h3>Total Students</h3>
+            <h2 id="totalStudents">0</h2>
+        </div>
+
+        <div class="box">
+            <h3>Present</h3>
+            <h2 id="presentCount">0</h2>
+        </div>
+
+        <div class="box">
+            <h3>Absent</h3>
+            <h2 id="absentCount">0</h2>
+        </div>
+
+        <div class="box">
+            <h3>Attendance %</h3>
+            <h2 id="attendancePercent">0%</h2>
+        </div>
+
+    </div>
+
+    <!-- Attendance Table -->
+
+    <div class="card">
+
+        <h2>Student Attendance</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Roll No</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="studentTable">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <!-- Export -->
+
+    <div class="card">
+
+        <button id="exportBtn">
+
+            Export Attendance (CSV)
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
